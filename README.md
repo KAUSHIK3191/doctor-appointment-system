@@ -1,4 +1,4 @@
-# doctor-appointment-system
+# Doctor Appointment System
 
 # Technologies used
 Java 8
