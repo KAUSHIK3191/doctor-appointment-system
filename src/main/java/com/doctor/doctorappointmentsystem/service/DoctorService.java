@@ -32,4 +32,8 @@ public class DoctorService {
         }
         return null;
     }
+
+    public List<Doctor> getAllDoctors() {
+        return doctorRepository.findAll();
+    }
 }

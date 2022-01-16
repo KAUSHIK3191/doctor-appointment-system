@@ -1,5 +1,6 @@
 package com.doctor.doctorappointmentsystem.controller;
 
+import com.doctor.doctorappointmentsystem.model.entity.Doctor;
 import com.doctor.doctorappointmentsystem.model.entity.Slots;
 import com.doctor.doctorappointmentsystem.service.DoctorService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +21,11 @@ public class DoctorController {
                                                  @RequestParam String bookingDate) throws ParseException {
         return doctorService.getSlotsByDoctorIdAndDate(doctorId, bookingDate);
 
+    }
+
+    @GetMapping("/doctors")
+    public List<Doctor> getAllDoctors(){
+        return doctorService.getAllDoctors();
     }
 
 }
