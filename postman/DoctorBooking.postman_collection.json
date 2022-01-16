@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "906f392f-b0cb-4753-8cdb-14909cc557d0",
+		"name": "DoctorBooking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/doctor/slots/2?bookingDate=2022-01-17",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/doctor/slots/2?bookingDate=2022-01-17",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"doctor",
+						"slots",
+						"2"
+					],
+					"query": [
+						{
+							"key": "bookingDate",
+							"value": "2022-01-17"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/bookSlot",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"doctorId\": \"1\",\r\n    \"patientId\": \"1\",\r\n    \"bookingDate\": \"2022-01-17\",\r\n    \"slotId\": \"2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/bookSlot",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bookSlot"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
